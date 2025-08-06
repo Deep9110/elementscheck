@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All HTML Tags Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; }
+        section { margin-bottom: 40px; border-bottom: 1px solid #ccc; padding-bottom: 30px; }
+        h2 { color: #3a59a1;}
+        h3 { color: #52734d;}
+    </style>
+</head>
+<body>
+    <h1 id="h1-title" class="h1-class" data-desc="Main heading">All HTML Tags Demonstration Page</h1>
+
+    <!-- =================== FORM ELEMENTS =================== -->
+    <section id="section-form" class="section-class" data-desc="Form Elements Section">
+        <h2 id="form-elements-title" class="section-title-class">Form Elements</h2>
+        <form id="form-example" class="form-class" data-desc="Sample form">
+            <label for="input-text" id="label-input-text" class="form-label-class">Text Input</label>
+            <input type="text" id="input-text" class="input-class" name="input-text" data-desc="Text input"><br>
+
+            <label for="input-password" id="label-input-password" class="form-label-class">Password</label>
+            <input type="password" id="input-password" class="input-password-class"><br>
+
+            <label id="label-checkbox" class="form-label-class"><input type="checkbox" id="input-checkbox" class="input-checkbox-class" name="check" data-desc="Checkbox"> Checkbox</label><br>
+            <label id="label-radio" class="form-label-class"><input type="radio" id="input-radio" class="input-radio-class" name="radio" data-desc="Radio"> Radio</label><br>
+
+            <label for="input-email" id="label-input-email" class="form-label-class">Email</label>
+            <input type="email" id="input-email" class="input-email-class"><br>
+
+            <label for="select1" id="label-select1" class="form-label-class">Select List</label>
+            <select id="select1" class="select-class">
+                <optgroup id="optgroup-1" class="optgroup-class" label="Group 1">
+                    <option id="option-1" class="option-class" value="1">Option 1</option>
+                    <option id="option-2" class="option-class" value="2">Option 2</option>
+                </optgroup>
+                <optgroup id="optgroup-2" class="optgroup-class" label="Group 2">
+                    <option id="option-3" class="option-class" value="3">Option 3</option>
+                </optgroup>
+            </select><br>
+
+            <label for="textarea1" id="label-textarea1" class="form-label-class">Textarea</label>
+            <textarea id="textarea1" class="textarea-class" rows="3"></textarea><br>
+
+            <fieldset id="fieldset-example" class="fieldset-class">
+                <legend id="legend-example" class="legend-class">Fieldset &amp; Legend Example</legend>
+                <input type="text" id="input-fieldset" class="input-class" placeholder="Inside Fieldset">
+            </fieldset>
+
+            <datalist id="datalist-browsers" class="datalist-class">
+                <option id="datalist-option-chrome" value="Chrome">
+                <option id="datalist-option-firefox" value="Firefox">
+                <option id="datalist-option-edge" value="Edge">
+            </datalist>
+            <input list="datalist-browsers" name="browser" id="input-browser" class="input-browser-class">
+            <output for="input-text" id="output1" class="output-class">Example output</output><br>
+            <progress id="progress-bar" class="progress-class" value="70" max="100"></progress>
+            <meter id="meter-bar" class="meter-class" min="0" max="100" value="35">35%</meter>
+        </form>
+    </section>
+
+    <!-- =================== INTERACTIVE ELEMENTS =================== -->
+    <section id="section-interactive" class="section-class" data-desc="Interactive Elements Section">
+        <h2 id="interactive-elements-title" class="section-title-class">Interactive Elements</h2>
+        <a href="#" id="a-link-1" class="a-link-class" data-desc="Anchor link 1">Standard anchor (&lt;a&gt;)</a><br>
+
+        <area shape="rect" coords="0,0,82,126" href="#" alt="Sample Area" id="area-1" class="area-class">
+        <map name="map1" id="map-1" class="map-class">
+            <area shape="rect" coords="0,0,82,126" href="#" alt="Sample Area" id="area-2" class="area-class">
+        </map>
+        <img src="https://via.placeholder.com/150" usemap="#map1" alt="Image Map Example" id="img-areamap" class="img-class"><br>
+
+        <details id="details-1" class="details-class">
+            <summary id="summary-1" class="summary-class">Details Summary</summary>
+            <p id="details-p-1" class="details-p-class">Some hidden details shown on click.</p>
+        </details>
+        <dialog open id="dialog-1" class="dialog-class">This is a dialog</dialog>
+        <menu id="menu-1" class="menu-class">
+            <menuitem label="Menu Item 1" id="menuitem-1" class="menuitem-class"></menuitem>
+            <menuitem label="Menu Item 2" id="menuitem-2" class="menuitem-class"></menuitem>
+        </menu>
+    </section>
+
+    <!-- =================== NAVIGATION ELEMENTS =================== -->
+    <section id="section-navigation" class="section-class" data-desc="Navigation Elements Section">
+        <h2 id="navigation-elements-title" class="section-title-class">Navigation Elements</h2>
+        <nav id="nav-1" class="nav-class">
+            <a href="#" id="a-home" class="nav-link-class">Home</a> | 
+            <a href="#" id="a-about" class="nav-link-class">About</a>
+        </nav><br>
+        <header id="header-1" class="header-class">
+            <h3 id="header-section" class="header-section-class">Header Section</h3>
+        </header>
+        <footer id="footer-1" class="footer-class">
+            <h3 id="footer-section" class="footer-section-class">Footer Section</h3>
+        </footer>
+        <main id="main-1" class="main-class">
+            <p id="main-p-1" class="main-p-class">Main Content Area (main)</p>
+        </main>
+        <aside id="aside-1" class="aside-class">
+            <p id="aside-p-1" class="aside-p-class">Aside Section (Sidebar)</p>
+        </aside>
+        <section id="section-article" class="article-section-class">
+            <h3 id="article-section-title" class="article-section-title-class">Article Section</h3>
+            <article id="article-1" class="article-class">
+                <h4 id="article-heading-1" class="article-heading-class">Article Heading</h4>
+                <p id="article-p-1" class="article-p-class">This is an article's content.</p>
+            </article>
+        </section>
+    </section>
+
+    <!-- =================== TABLE ELEMENTS =================== -->
+    <section id="section-table" class="section-class" data-desc="Table Elements Section">
+        <h2 id="table-elements-title" class="section-title-class">Table Elements</h2>
+        <table id="table-1" class="table-class">
+            <caption id="table-caption-1" class="caption-class">This is a caption</caption>
+            <colgroup id="colgroup-1" class="colgroup-class">
+                <col id="col-1" class="col-class" style="background-color:#f2f2f2">
+                <col id="col-2" class="col-class">
+            </colgroup>
+            <thead id="thead-1" class="thead-class">
+                <tr id="thead-tr-1" class="tr-class">
+                    <th id="th-1" class="th-class">Heading 1</th>
+                    <th id="th-2" class="th-class">Heading 2</th>
+                </tr>
+            </thead>
+            <tbody id="tbody-1" class="tbody-class">
+                <tr id="tbody-tr-1" class="tr-class">
+                    <td id="td-1" class="td-class">Cell 1</td>
+                    <td id="td-2" class="td-class">Cell 2</td>
+                </tr>
+                <tr id="tbody-tr-2" class="tr-class">
+                    <td id="td-3" class="td-class">Cell 3</td>
+                    <td id="td-4" class="td-class">Cell 4</td>
+                </tr>
+            </tbody>
+            <tfoot id="tfoot-1" class="tfoot-class">
+                <tr id="tfoot-tr-1" class="tr-class">
+                    <td id="td-footer" class="td-class" colspan="2">Footer</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!-- =================== LIST ELEMENTS =================== -->
+    <section id="section-list" class="section-class" data-desc="List Elements Section">
+        <h2 id="list-elements-title" class="section-title-class">List Elements</h2>
+        <ul id="ul-1" class="ul-class">
+            <li id="ul-li-1" class="li-class">Unordered List Item 1</li>
+            <li id="ul-li-2" class="li-class">Unordered List Item 2</li>
+        </ul>
+        <ol id="ol-1" class="ol-class">
+            <li id="ol-li-1" class="li-class">Ordered List Item 1</li>
+            <li id="ol-li-2" class="li-class">Ordered List Item 2</li>
+        </ol>
+        <dl id="dl-1" class="dl-class">
+            <dt id="dt-1" class="dt-class">Definition Term</dt>
+            <dd id="dd-1" class="dd-class">Definition Description</dd>
+        </dl>
+    </section>
+
+    <!-- =================== CONTENT ELEMENTS =================== -->
+    <section id="section-content" class="section-class" data-desc="Content Elements Section">
+        <h2 id="content-elements-title" class="section-title-class">Content Elements</h2>
+        <p id="p-1" class="p-class">This is a paragraph (&lt;p&gt;).</p>
+        <span id="span-1" class="span-class">This is a span.</span>
+        <div id="div-1" class="div-class">This is a div.</div>
+        <h1 id="h1-1" class="hx-class">Heading 1 (&lt;h1&gt;)</h1>
+        <h2 id="h2-1" class="hx-class">Heading 2 (&lt;h2&gt;)</h2>
+        <h3 id="h3-1" class="hx-class">Heading 3 (&lt;h3&gt;)</h3>
+        <h4 id="h4-1" class="hx-class">Heading 4 (&lt;h4&gt;)</h4>
+        <h5 id="h5-1" class="hx-class">Heading 5 (&lt;h5&gt;)</h5>
+        <h6 id="h6-1" class="hx-class">Heading 6 (&lt;h6&gt;)</h6>
+        <pre id="pre-1" class="pre-class">Preformatted text</pre>
+        <code id="code-1" class="code-class">&lt;code&gt; sample code &lt;/code&gt;</code>
+        <blockquote id="blockquote-1" class="blockquote-class" cite="https://example.com">Blockquote Example</blockquote>
+        <q id="q-1" class="q-class">This is a short inline quote</q>
+        <cite id="cite-1" class="cite-class">Citation Text</cite>
+        <em id="em-1" class="em-class">Emphasized text</em>
+        <strong id="strong-1" class="strong-class">Strong text</strong>
+        <small id="small-1" class="small-class">Small text</small>
+        <mark id="mark-1" class="mark-class">Marked or highlighted</mark>
+        <time id="time-1" class="time-class" datetime="2025-08-01">August 1st, 2025</time>
+        <abbr id="abbr-1" class="abbr-class" title="World Health Organization">WHO</abbr>
+        <ins id="ins-1" class="ins-class">Inserted text</ins>
+        <del id="del-1" class="del-class">Deleted text</del>
+        <s id="s-1" class="s-class">Strikethrough</s>
+        <u id="u-1" class="u-class">Underlined</u>
+        <i id="i-1" class="i-class">Italic</i>
+        <b id="b-1" class="b-class">Bold</b>
+        <sub id="sub-1" class="sub-class">Subscript</sub>
+        <sup id="sup-1" class="sup-class">Superscript</sup>
+        <dfn id="dfn-1" class="dfn-class">Definition tag <dfn id="dfn-2" class="dfn-class">Definition tag</dfn></dfn>
+        <var id="var-1" class="var-class">Variable</var>
+        <samp id="samp-1" class="samp-class">Sample output</samp>
+        <kbd id="kbd-1" class="kbd-class">Ctrl + S</kbd>
+        <bdo dir="rtl" id="bdo-1" class="bdo-class">Reversed text</bdo>
+        <bdi id="bdi-1" class="bdi-class">BDI Example العربية</bdi>
+        <data value="123" id="data-1" class="data-class">Data 123</data>
+        <ruby id="ruby-1" class="ruby-class">漢 <rt id="rt-1" class="rt-class">hàn</rt></ruby>
+        <rp id="rp-1" class="rp-class">(</rp><rt id="rt-2" class="rt-class">hàn</rt><rp id="rp-2" class="rp-class">)</rp>
+        <wbr id="wbr-1" class="wbr-class">Word<wbr id="wbr-2">Break<wbr id="wbr-3">Opportunity
+    </section>
+
+    <!-- =================== MEDIA ELEMENTS =================== -->
+    <section id="section-media" class="section-class" data-desc="Media Elements Section">
+        <h2 id="media-elements-title" class="section-title-class">Media Elements</h2>
+        <audio controls id="audio-1" class="audio-class">
+            <source id="audio-src-1" src="audio.ogg" type="audio/ogg">
+            <source id="audio-src-2" src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio><br>
+        <video controls width="250" id="video-1" class="video-class">
+            <source id="video-src-1" src="movie.mp4" type="video/mp4">
+            <source id="video-src-2" src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video><br>
+        <picture id="picture-1" class="picture-class">
+            <source id="picture-src-1" media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+            <source id="picture-src-2" media="(min-width:465px)" srcset="img_white_flower.jpg">
+            <img id="picture-img-1" src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+        </picture><br>
+        <img src="https://via.placeholder.com/100" id="img-1" class="img-class" alt="Sample Image"><br>
+        <svg width="100" height="50" id="svg-1" class="svg-class"><rect width="100" height="50" style="fill:blue" id="svg-rect-1"></rect></svg>
+        <canvas id="myCanvas" class="canvas-class" width="100" height="50" style="border:1px solid #000000;">Canvas not supported</canvas>
+        <track kind="captions" id="track-1" class="track-class" src="captions_en.vtt" srclang="en" label="English">
+    </section>
+
+    <!-- =================== EMBEDDED CONTENT =================== -->
+    <section id="section-embedded" class="section-class" data-desc="Embedded Content Section">
+        <h2 id="embedded-elements-title" class="section-title-class">Embedded Content</h2>
+        <param name="autoplay" value="true" id="param-1" class="param-class">
+    </section>
+
+    <!-- =================== UTILITY ELEMENTS =================== -->
+    <section id="section-utility" class="section-class" data-desc="Utility Elements Section">
+        <h2 id="utility-elements-title" class="section-title-class">Utility Elements</h2>
+        <hr id="hr-1" class="hr-class">
+        <wbr id="wbr-4" class="wbr-class">
+        <bdi id="bdi-2" class="bdi-class">Text with BDI</bdi>
+        <bdo dir="rtl" id="bdo-2" class="bdo-class">Right-to-Left</bdo>
+        <ruby id="ruby-2" class="ruby-class">
+            漢 <rt id="rt-3" class="rt-class">hàn</rt>
+        </ruby>
+        <rp id="rp-3" class="rp-class">(</rp>
+        <rt id="rt-4" class="rt-class">hàn</rt>
+        <rp id="rp-4" class="rp-class">)</rp>
+        <kbd id="kbd-2" class="kbd-class">Typing Example</kbd>
+        <samp id="samp-2" class="samp-class">Sample Program Output</samp>
+        <var id="var-2" class="var-class">variable</var>
+        <dfn id="dfn-3" class="dfn-class">Definition tag</dfn>
+        <data value="42" id="data-2" class="data-class">42</data>
+    </section>
+
+    <footer id="footer-2" class="footer-class">
+        <p id="end-demo-p" class="p-class">End of All HTML Tags Demo</p>
+    </footer>
+</body>
+</html>
